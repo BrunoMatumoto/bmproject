@@ -103,7 +103,25 @@ footer {
   color: #212c6b;
   font-weight: 400;
 }
+.pictures-portfolio {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
@@ -112,5 +130,10 @@ footer {
     width: 100%;
     display: block;
     text-align: right;
+  }
+  .column {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    max-width: 100%;
   }
 }
